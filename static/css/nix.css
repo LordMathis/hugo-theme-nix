@@ -1,0 +1,46 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin-top: 50px;
+	background-color: #fdfdfd;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#green-terminal {
+	color: #00ff00;
+}
+
+.font-header {
+	font-family: 'Inconsolata', monospace;
+}
+
+.font-paragraph {
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+	font-size: 1.5em;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+.user-description {
+	border-style: solid;
+	border-width: 5px;
+	border-color: #292929;
+}
+
+i {
+	margin: 10px 20px 10px 20px;
+	color: #333;
+}

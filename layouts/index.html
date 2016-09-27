@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-<head>
-  <title> {{ .Site.Title }} </title> 
-  
-  {{ partial "head.html" . }}
-    
-</head>
-<body>
-  {{ partial "header.html" . }}
+	<head>
+		<title> {{ .Site.Title }} </title> 
 
-  <section class="user-profile">
+		{{ partial "head.html" . }}
 
-	<h1> {{ .Site.Params.SelfName }} </h1>
+	</head>
+	<body>
+		{{ partial "header.html" . }}
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 user-profile text-center">
 
-        {{ with .Site.Params.TwitterID }}
-        <a href="https://twitter.com/{{.}}" title="Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-        {{ end }}
-        {{ with .Site.Params.GoogleplusID }}
-        <a href="https://plus.google.com/{{.}}/about" title="Google+"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
-        {{ end }}
-        {{ with .Site.Params.FacebookID }}
-        <a href="https://facebook.com/{{.}}" title="Facebook"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
-        {{ end }}
-        {{ with .Site.Params.GithubID }}
-        <a href="https://github.com/{{.}}" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-        {{ end }}
-        {{ with .Site.Params.LinkedInID }}
-        <a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-        {{ end }}
+					<h1> {{ .Site.Params.SelfName }} </h1>
 
-    <p class="user-motivation">{{ .Site.Params.SelfIntro }}</p>
-  </section>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 user-social text-center">
 
-</body>
+					{{ with .Site.Params.TwitterID }}
+					<a href="https://twitter.com/{{.}}" title="Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
+					{{ with .Site.Params.GoogleplusID }}
+					<a href="https://plus.google.com/{{.}}/about" title="Google+"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
+					{{ with .Site.Params.FacebookID }}
+					<a href="https://facebook.com/{{.}}" title="Facebook"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
+					{{ with .Site.Params.GithubID }}
+					<a href="https://github.com/{{.}}" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
+					{{ with .Site.Params.LinkedInID }}
+					<a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
+          {{ with .Site.Params.Email }}
+					<a href="mailto:{{.}}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+          {{ end }}
+
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 user-description text-center">
+					<p>{{ .Site.Params.SelfIntro }}</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
 </html>
 

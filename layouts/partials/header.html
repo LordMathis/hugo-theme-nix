@@ -1,5 +1,5 @@
 <header>
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -7,8 +7,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" id="green-terminal" href="namesny.com">matus@namesny ~ $</a>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href={{.Site.BaseURL}}>{{.Site.Params.HeaderUsername}}@{{.Site.Params.HeaderHostname}} ~ $</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
