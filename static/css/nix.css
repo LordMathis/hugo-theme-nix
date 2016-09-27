@@ -6,7 +6,7 @@ body {
 	margin-top: 50px;
 	background-color: #fdfdfd;
 	height: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5em;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .font-paragraph {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -28,17 +28,24 @@ nav {
 
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
 	font-size: 5em;
 }
 
+.user-profile {
+}
+
+.user-social {
+}
+
 .user-description {
 	border-style: solid;
 	border-width: 5px;
 	border-color: #292929;
+	margin-top: 10em;
 }
 
 i {
