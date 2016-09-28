@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+	<head>
+		<title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+
+		{{ partial "head.html" . }}
+	</head>
+
+	<body>
+		{{ partial "header.html" . }}
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h1 id=>{{ .Title }}</h1>
+				</div>
+			</div>
+			<ul id="post-list">
+				{{ range .Data.Pages }}
+				<li>
+					<div class="post-list-item">
+						<div class="post-header">
+							<h4 class="post-link"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							<h4 class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4>
+						</div>
+						<div class="post-summary"><p>{{ .Summary }}</p></div>
+					</div>
+				</li>
+				{{ end }}
+
+			</ul>
+		</div>
+	</body>
+</html>
