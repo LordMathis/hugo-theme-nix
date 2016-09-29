@@ -4,6 +4,7 @@ html {
 
 body {
 	margin-top: 50px;
+	margin-bottom: 50px;
 	background-color: #fdfdfd;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -62,10 +63,12 @@ i {
 }
 
 .post-header {
-	background-color: #eeeeee;
+	background-color: #F5F5F5;
+	overflow: hidden;
+	padding: 0 5px 0 5px;
 }
 
-.post-summary {
+.post-summary, .post-content{
 	clear: both;
 }
 
@@ -79,3 +82,11 @@ i {
 	border-width: 0 0 3px 0;
 	border-color: #292929;
 }
+
+footer {
+	background-color: #F5F5F5;
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+
