@@ -3,19 +3,14 @@
 
 name = "Nix"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://siteforthistheme.com/"
-tags = ["", ""]
-features = ["", ""]
+licenselink = "https://github.com/LordMathis/hugo-theme-nix/blob/master/LICENSE.md"
+description = "Simple theme for Hugo"
+homepage = "https://github.com/LordMathis/hugo-theme-nix/"
+tags = ["simple", "minimal", "unix", "terminal", "blog"]
+features = ["blog"]
 min_version = 0.15
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Matúš Námešný"
+  homepage = "namesny.com"
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
