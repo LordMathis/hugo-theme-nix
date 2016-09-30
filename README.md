@@ -19,15 +19,15 @@ Add these parameters to your `config.toml`:
 ```
 [params]
   GithubID = "your_github"
-	TwitterID = "your_twitter"
-	LinkedInID = "your_linkedin"
-	GoogleplusID = "your_googleplus"
-	FacebookID = "your_facebook"
-	SelfName = "your_name"
-	HeaderUsername = "username"
-	HeaderHostname = "hostname"
-	Email = "your_email"
-	About = "info_about_you"
+  TwitterID = "your_twitter"
+  LinkedInID = "your_linkedin"
+  GoogleplusID = "your_googleplus"
+  FacebookID = "your_facebook"
+  SelfName = "your_name"
+  HeaderUsername = "username"
+  HeaderHostname = "hostname"
+  Email = "your_email"
+  About = "info_about_you"
 ```
 
 Edit them as needed. If you don't want one of the social networks simply delete that line. `HeaderUsername` and `HeaderHostname` will be displayed in navbar on left side in the format: `HeaderUsername@HeaderHostname ~ $`
