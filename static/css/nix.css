@@ -1,6 +1,12 @@
+* {
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
 body {
-	margin-top: 50px;
-	margin-bottom: 50px;
 	background-color: #fdfdfd;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -37,6 +43,7 @@ h1,h2,h3,h4,h5,h6 {
 	border-width: 5px;
 	border-color: #292929;
 	margin-top: 10em;
+	margin-bottom: 1em;
 }
 
 i {
@@ -74,13 +81,21 @@ i {
 	border-color: #292929;
 }
 
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -50px;
+	padding-top: 50px;
+}
+
 .footer {
 	background-color: #F5F5F5;
 	display: block;
 	width: 100%;
 	padding: 10px;
-	position: absolute;
-	bottom: 0;
+	height: 50px;
+}
+
+.push {
 	height: 50px;
 }
 
