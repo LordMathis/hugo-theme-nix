@@ -69,6 +69,10 @@ i {
 	clear: both;
 }
 
+.post-summary {
+	padding: 0 5px 0 5px;
+}
+
 #post-list {
 	list-style: none;
 	padding-left: 0;
