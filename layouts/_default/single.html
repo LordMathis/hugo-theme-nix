@@ -9,12 +9,13 @@
 
 	<body>
 		{{ partial "header.html" . }}
-		<div class="container">
+		<div class="container wrapper">
 			<h1 class=""><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 			<span class="post-date">{{ .Date.Format "Jan 2, 2006 " }}</span>
 			<div class="post-content">
 				{{ .Content }}
 			</div>
+			<div class="push"></div>
 		</div>
 		{{ partial "footer.html" . }}
 	</body>
