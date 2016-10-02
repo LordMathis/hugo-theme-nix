@@ -28,6 +28,7 @@ Add these parameters to your `config.toml`:
   HeaderHostname = "hostname"
   Email = "your_email"
   About = "info_about_you"
+  GoogleAnalytics="your_google_analytics_id"
 ```
 
 Edit them as needed. If you don't want one of the social networks simply delete that line. `HeaderUsername` and `HeaderHostname` will be displayed in navbar on left side in the format: `HeaderUsername@HeaderHostname ~ $`
