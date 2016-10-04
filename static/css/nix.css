@@ -81,6 +81,10 @@ i {
 	padding: 0 5px 0 5px;
 }
 
+.post-list-footer {
+	padding-bottom: 5px;
+}
+
 #post-list {
 	list-style: none;
 	padding-left: 0;
