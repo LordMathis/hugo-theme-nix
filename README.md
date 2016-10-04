@@ -2,6 +2,8 @@
 
 Nix is a simple, minimal theme for Hugo
 
+![Hugo Theme Nix](https://raw.githubusercontent.com/LordMathis/hugo-theme-nix/master/images/screenshot.png)
+
 ## Usage
 
 Clone the repository to your hugo theme directory
