@@ -28,7 +28,7 @@ Add these parameters to your `config.toml`:
   HeaderHostname = "hostname"
   Email = "your_email"
   About = "info_about_you"
-	ProfilePicture = "profile_icture_url"
+  ProfilePicture = "profile_icture_url"
   GoogleAnalytics = "your_google_analytics_id"
 ```
 
