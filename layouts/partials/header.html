@@ -17,7 +17,7 @@
 				<li>
 					<a href="{{ .Site.BaseURL }}">/home/{{.Site.Params.HeaderUsername}}</a>
 				</li>
-				{{ range .Site.Menus.main }}
+				{{ range .Site.Menus.header }}
 				{{ $name := lower .Name }}
 				<li >
 					<a href="{{ .URL }}">~/{{ lower .Name }}</a>
