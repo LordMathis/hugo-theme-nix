@@ -1,0 +1,28 @@
+baseurl = "your_website_url"
+title = "your_website_title"
+theme = "nix"
+languageCode = "en-us"
+
+[menu]
+  [[menu.header]]
+    name = "post"
+    weight = 0
+    url = "/post"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "/about"
+
+[params]
+  GithubID = "your_github"
+  TwitterID = "your_twitter"
+  LinkedInID = "your_linkedin"
+  GoogleplusID = "your_googleplus"
+  FacebookID = "your_facebook"
+  Name = "Mr Hugo"
+  HeaderUsername = "hugo"
+  HeaderHostname = "hugo"
+  Email = "your_email"
+  About = "Hi I'm Hugo and this is my ExampleSite. I am a regular guy with a regular name used just as an example"
+  ProfilePicture = "/profile.jpg"
+
