@@ -10,9 +10,14 @@
 		{{ partial "header.html" . }}
 		<div class="container wrapper">
 			<div class="row">
+				<div class="col-sm-3 col-centered">
+					<img alt="profile-picture" class="img-responsive img-circle user-picture" src="{{ .Site.Params.ProfilePicture }}">
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-xs-12 user-profile text-center">
 
-					<h1 id="user-name"> {{ .Site.Params.SelfName }} </h1>
+					<h1 id="user-name"> {{ upper .Site.Params.Name }} </h1>
 
 				</div>
 			</div>

@@ -31,7 +31,7 @@ nav {
 
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Concert One', cursive;
 }
 
 #user-name {
@@ -42,8 +42,16 @@ h1,h2,h3,h4,h5,h6 {
 	border-style: solid;
 	border-width: 5px;
 	border-color: #292929;
-	margin-top: 10em;
+	margin-top: 20px;
 	margin-bottom: 1em;
+	padding: 15px;
+}
+
+.user-picture {
+	border-style: solid;
+	border-width: 5px;
+	border-color: #292929;
+	margin-top: 20px;
 }
 
 i {
@@ -101,6 +109,11 @@ i {
 
 .push {
 	height: 50px;
+}
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
 }
 
 div p {
