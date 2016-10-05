@@ -46,6 +46,8 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     url = "/posts"
 ```
 
+To enable disqus comments add `disqusShortname` to your `config.toml`
+
 ## License
 
 Nix is licensed under the [MIT License](LICENSE.md) 
