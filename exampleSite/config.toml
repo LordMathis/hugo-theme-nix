@@ -2,6 +2,7 @@ baseurl = "your_website_url"
 title = "your_website_title"
 theme = "nix"
 languageCode = "en-us"
+disqusShortname = "your_disqus_shortname"
 
 [menu]
   [[menu.header]]
