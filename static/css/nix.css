@@ -97,6 +97,11 @@ i {
 	border-color: #292929;
 }
 
+.post-comments {
+	padding-top: 10px;
+	border-top-style: solid;
+}
+
 .wrapper {
 	min-height: 100%;
 	margin: 0 auto -50px;

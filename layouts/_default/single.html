@@ -15,6 +15,9 @@
 			<div class="post-content">
 				{{ .Content }}
 			</div>
+			<div class="post-comments">
+				{{ template "_internal/disqus.html" . }}
+			</div>
 			<div class="push"></div>
 		</div>
 		{{ partial "footer.html" . }}
