@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+	<head>
+		<title> {{ .Site.Title }} </title> 
+
+		{{ partial "head.html" . }}
+
+	</head>
+	<body>
+		{{ partial "header.html" . }}
+		<div class="container wrapper">
+			<h1>Uhm... WHAT?</h1>
+			<div class="post-content">
+				<p>Looks like you're lost. This page doesn't exist</p>
+			</div>
+			<div class="push"></div>
+		</div>
+		{{ partial "footer.html" . }}
+	</body>
+</html>
+
