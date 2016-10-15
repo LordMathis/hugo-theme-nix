@@ -48,6 +48,10 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: initial;
 }
 
+.user-profile {
+	padding: 0;
+}
+
 .user-picture {
 	border-style: solid;
 	border-width: 5px;
