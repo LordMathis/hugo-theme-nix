@@ -31,7 +31,7 @@ nav {
 
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Concert One', cursive;
 }
 
 #user-name {
@@ -53,10 +53,6 @@ h1,h2,h3,h4,h5,h6 {
 	border-width: 5px;
 	border-color: #292929;
 	margin-top: 20px;
-}
-
-.user-profile {
-	padding: 0;
 }
 
 i {
