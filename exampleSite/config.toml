@@ -1,4 +1,4 @@
-baseurl = "your_website_url"
+baseurl = "http://example.org/"
 title = "Hugo Website"
 theme = "nix"
 languageCode = "en-us"
