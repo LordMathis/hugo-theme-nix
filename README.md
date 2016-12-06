@@ -46,7 +46,9 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     url = "/posts"
 ```
 
-To enable disqus comments add `disqusShortname` to your `config.toml`
+To enable disqus comments add `disqusShortname` to your `config.toml`.
+
+You can turn off disqus comments per page by adding `nocomments = true` to the front matter.
 
 ## License
 
