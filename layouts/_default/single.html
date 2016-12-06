@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+    <head>
+        <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
 
-		{{ partial "head.html" . }}
-	</head>
+        {{ partial "head.html" . }}
+    </head>
 
-	<body>
-		{{ partial "header.html" . }}
-		<div class="container wrapper">
-			<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-			<span class="post-date">{{ .Date.Format "Jan 2, 2006 " }}</span>
-			<div class="post-content">
-				{{ .Content }}
-			</div>
-			<div class="post-comments">
-				{{ template "_internal/disqus.html" . }}
-			</div>
-			<div class="push"></div>
-		</div>
-		{{ partial "footer.html" . }}
-	</body>
+    <body>
+        {{ partial "header.html" . }}
+        <div class="container wrapper">
+            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <span class="post-date">{{ .Date.Format "Jan 2, 2006 " }}</span>
+            <div class="post-content">
+                {{ .Content }}
+            </div>
+            {{ if (isset .Params "nocomments")  }}
+            {{ else }}
+            <div class="post-comments">
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ end }}
+            <div class="push"></div>
+        </div>
+        {{ partial "footer.html" . }}
+    </body>
