@@ -8,7 +8,7 @@ description = "Simple theme for Hugo"
 homepage = "https://github.com/LordMathis/hugo-theme-nix/"
 tags = ["simple", "minimal", "unix", "terminal", "blog"]
 features = ["blog"]
-min_version = 0.15
+min_version = 0.20
 
 [author]
   name = "Matúš Námešný"
