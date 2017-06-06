@@ -35,7 +35,7 @@ Add these parameters to your `config.toml`:
   GoogleAnalytics = "your_google_analytics_id"
 ```
 
-Edit them as needed. If you don't want one of the social networks simply delete that line. `HeaderUsername` and `HeaderHostname` will be displayed in navbar on left side in the format: `HeaderUsername@HeaderHostname ~ $`
+Edit them as needed. If you don't want one of the social networks or Google Analytics simply delete that line. `HeaderUsername` and `HeaderHostname` will be displayed in navbar on left side in the format: `HeaderUsername@HeaderHostname ~ $`
 
 To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
 
