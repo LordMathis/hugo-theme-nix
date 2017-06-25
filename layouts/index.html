@@ -39,7 +39,10 @@
 					{{ with .Site.Params.GitlabId }}
 					<a href="https://gitlab.com/{{.}}" title="GitLab"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
-					{{ with .Site.Params.LinkedInID }}
+                    {{ with .Site.Params.CodepenID }}
+					<a href="https://codepen.io/{{.}}" title="Codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
+                    {{ end }}
+                    {{ with .Site.Params.LinkedInID }}
 					<a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
 					{{ with .Site.Params.Email }}
