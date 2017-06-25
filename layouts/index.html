@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 	<head>
-		<title> {{ .Site.Title }} </title> 
+		<title> {{ .Site.Title }} </title>
 
 		{{ partial "head.html" . }}
 
@@ -39,10 +39,10 @@
 					{{ with .Site.Params.GitlabId }}
 					<a href="https://gitlab.com/{{.}}" title="GitLab"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
-                    {{ with .Site.Params.CodepenID }}
+          {{ with .Site.Params.CodepenID }}
 					<a href="https://codepen.io/{{.}}" title="Codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
-                    {{ end }}
-                    {{ with .Site.Params.LinkedInID }}
+          {{ end }}
+          {{ with .Site.Params.LinkedInID }}
 					<a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
 					{{ with .Site.Params.Email }}
@@ -62,4 +62,3 @@
 		{{ partial "footer.html" . }}
 	</body>
 </html>
-
