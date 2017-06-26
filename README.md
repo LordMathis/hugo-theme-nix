@@ -23,6 +23,7 @@ Add these parameters to your `config.toml`:
   GithubID = "your_github"
   GitlabId = "your_gitlab"
   TwitterID = "your_twitter"
+  CodepenID = "your_codepen"
   LinkedInID = "your_linkedin"
   GoogleplusID = "your_googleplus"
   FacebookID = "your_facebook"
