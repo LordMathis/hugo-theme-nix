@@ -24,6 +24,9 @@
 			<div class="row">
 				<div class="col-xs-12 user-social text-center">
 
+					{{ with .Site.Params.SlackURL }}
+					<a href="{{.}}" title="Slack"><i class="fa fa-slack fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
 					{{ with .Site.Params.TwitterID }}
 					<a href="https://twitter.com/{{.}}" title="Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
