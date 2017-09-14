@@ -42,19 +42,24 @@
 					{{ with .Site.Params.GitlabId }}
 					<a href="https://gitlab.com/{{.}}" title="GitLab"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
-                                        {{ with .Site.Params.CodepenID }}
+                    {{ with .Site.Params.CodepenID }}
 					<a href="https://codepen.io/{{.}}" title="Codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
-                                        {{ end }}
+                    {{ end }}
 					{{ with .Site.Params.LinkedInID }}
 					<a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
-                    {{ with .Site.Params.InstagramID }}
+					{{ with .Site.Params.InstagramID }}
 					<a href="https:/instagram.com/{{.}}" title="Instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
+					{{ with .Site.Params.FlickrID }}
+					<a href="https://www.flickr.com/photos/{{.}}" title="Flickr"><i class="fa fa-flickr fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
 					{{ with .Site.Params.Email }}
 					<a href="mailto:{{.}}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
 					{{ end }}
-
+					{{ with .Site.Params.BlogURL }}
+					<a href="{{.}}" title="Blog"><i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i></a>
+					{{ end }}
 				</div>
 			</div>
 			<div class="row">
