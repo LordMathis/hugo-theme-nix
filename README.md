@@ -27,6 +27,7 @@ Add these parameters to your `config.toml`:
   LinkedInID = "your_linkedin"
   GoogleplusID = "your_googleplus"
   FacebookID = "your_facebook"
+  InstagramID = "your_instagram"
   Name = "your_name"
   HeaderUsername = "username"
   HeaderHostname = "hostname"
