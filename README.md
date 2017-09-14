@@ -28,7 +28,7 @@ Add these parameters to your `config.toml`:
   GoogleplusID = "your_googleplus"
   FacebookID = "your_facebook"
   FlickrID = "your_flickr"
-  Blog = "your_blog"
+  BlogURL = "your_blog"
   Name = "your_name"
   HeaderUsername = "username"
   HeaderHostname = "hostname"
