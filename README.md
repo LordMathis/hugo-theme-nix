@@ -56,4 +56,4 @@ You can turn off disqus comments per page by adding `nocomments = true` to the f
 
 ## License
 
-Nix is licensed under the [MIT License](LICENSE.md) 
+Nix is licensed under the [MIT License](LICENSE.md)
