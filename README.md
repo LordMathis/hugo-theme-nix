@@ -28,6 +28,7 @@ Add these parameters to your `config.toml`:
   GoogleplusID = "your_googleplus"
   FacebookID = "your_facebook"
   InstagramID = "your_instagram"
+  TelegramID = "your_telegram"
   Name = "your_name"
   HeaderUsername = "username"
   HeaderHostname = "hostname"
