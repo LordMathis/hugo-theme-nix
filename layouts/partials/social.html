@@ -1,0 +1,33 @@
+{{ with .Site.Params.SlackURL }}
+<a href="{{.}}" title="Slack"><i class="fa fa-slack fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.TwitterID }}
+<a href="https://twitter.com/{{.}}" title="Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.GoogleplusID }}
+<a href="https://plus.google.com/{{.}}/about" title="Google+"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.FacebookID }}
+<a href="https://facebook.com/{{.}}" title="Facebook"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.GithubID }}
+<a href="https://github.com/{{.}}" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.GitlabId }}
+<a href="https://gitlab.com/{{.}}" title="GitLab"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.CodepenID }}
+<a href="https://codepen.io/{{.}}" title="Codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.LinkedInID }}
+<a href="https://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.InstagramID }}
+<a href="https://instagram.com/{{.}}" title="Instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.TelegramID }}
+<a href="https://t.me/{{.}}" title="Telegram"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.Email }}
+<a href="mailto:{{.}}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+{{ end }}
