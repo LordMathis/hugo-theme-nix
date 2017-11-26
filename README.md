@@ -37,6 +37,7 @@ Add these parameters to your `config.toml`:
   ProfilePicture = "profile_picture_url"
   GoogleAnalytics = "your_google_analytics_id"
   SlackURL = "https://join.slack.com/..."
+  PayPalMeID = "https://www.paypal.me/..."
   XingURL = "https://www.xing.com/profile/..."
 ```
 
