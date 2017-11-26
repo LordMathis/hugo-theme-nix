@@ -37,6 +37,7 @@ Add these parameters to your `config.toml`:
   ProfilePicture = "profile_picture_url"
   GoogleAnalytics = "your_google_analytics_id"
   SlackURL = "https://join.slack.com/..."
+  XingURL = "https://www.xing.com/profile/..."
 ```
 
 Edit them as needed. If you don't want one of the social networks or Google Analytics simply delete that line. `HeaderUsername` and `HeaderHostname` will be displayed in navbar on left side in the format: `HeaderUsername@HeaderHostname ~ $`
