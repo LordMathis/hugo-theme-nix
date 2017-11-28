@@ -20,8 +20,12 @@ Add these parameters to your `config.toml`:
 
 ```
 [params]
+  GnuPGFingerprint = "your_gpg_fingerprint"
+  StackExchangeID = "your_stackexchange_id"
+  StackOverflowID = "your_stackoverflow_id"
   GithubID = "your_github"
   GitlabId = "your_gitlab"
+  BitbucketID = "your_bitbucket_id"
   TwitterID = "your_twitter"
   CodepenID = "your_codepen"
   LinkedInID = "your_linkedin"

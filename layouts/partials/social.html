@@ -1,3 +1,12 @@
+{{ with .Site.Params.GnuPGFingerprint }}
+<a href="https://pgp.key-server.io/pks/lookup?op=vindex&search=0x{{.}}" title="GPG"><i class="fa fa-unlock-alt fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.StackExchangeID }}
+<a href="https://stackexchange.com/users/{{.}}" title="StackExchange"><i class="fa fa-stack-exchange fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.StackOverflowID }}
+<a href="https://stackoverflow.com/users/{{.}}" title="StackExchange"><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></a>
+{{ end }}
 {{ with .Site.Params.SlackURL }}
 <a href="{{.}}" title="Slack"><i class="fa fa-slack fa-3x" aria-hidden="true"></i></a>
 {{ end }}
@@ -9,6 +18,9 @@
 {{ end }}
 {{ with .Site.Params.FacebookID }}
 <a href="https://facebook.com/{{.}}" title="Facebook"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.BitbucketID }}
+<a href="https://bitbucket.org/{{.}}" title="Bitbucket"><i class="fa fa-bitbucket fa-3x" aria-hidden="true"></i></a>
 {{ end }}
 {{ with .Site.Params.GithubID }}
 <a href="https://github.com/{{.}}" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
