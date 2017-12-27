@@ -37,6 +37,8 @@ Add these parameters to your `config.toml`:
   HeaderUsername = "username"
   HeaderHostname = "hostname"
   Email = "your_email"
+  Phone = "+1-201-555-0123"
+  Mobile = "+1-201-555-0123"
   About = "info_about_you"
   ProfilePicture = "profile_picture_url"
   GoogleAnalytics = "your_google_analytics_id"
