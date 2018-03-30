@@ -14,6 +14,11 @@ body {
 	padding-top: 70px;
 }
 
+img {
+ 	max-width: 100%;
+}
+
+
 #green-terminal {
 	color: #00ff00;
 }
