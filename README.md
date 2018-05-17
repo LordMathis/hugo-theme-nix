@@ -45,6 +45,7 @@ Add these parameters to your `config.toml`:
   SlackURL = "https://join.slack.com/..."
   PayPalMeID = "https://www.paypal.me/..."
   XingURL = "https://www.xing.com/profile/..."
+  CvURL = "your_cv_url"
 ```
 
 Edit them as needed. If you don't want one of the social networks or Google Analytics simply delete that line. `HeaderUsername` and `HeaderHostname` will be displayed in navbar on left side in the format: `HeaderUsername@HeaderHostname ~ $`
