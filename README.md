@@ -60,6 +60,29 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     url = "/posts"
 ```
 
+To add a submenu item add `[[menu.header]]` item with a parent parameter to `config.toml`. For example:
+
+```
+[menu]
+  [[menu.header]]
+    identifier = "post"
+    name = "posts"
+    weight = 0
+    url = "/post"
+  [[menu.header]]
+    parent = "post"
+    name = "All Posts"
+    url = "/post"
+  [[menu.header]]
+    parent = "post"
+    name = "categories"
+    url = "/categories"
+  [[menu.header]]
+    parent = "post"
+    name = "tags"
+    url = "/tags"
+```
+
 To enable disqus comments add `disqusShortname` to your `config.toml`.
 
 You can turn off disqus comments per page by adding `nocomments = true` to the front matter.
