@@ -60,7 +60,7 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     url = "/posts"
 ```
 
-To add a submenu item add `[[menu.header]]` item to with a parent parameter in `config.toml`. For example:
+To add a submenu item add `[[menu.header]]` item with a parent parameter to `config.toml`. For example:
 
 ```
 [menu]
