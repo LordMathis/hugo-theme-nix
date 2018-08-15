@@ -28,6 +28,7 @@ Add these parameters to your `config.toml`:
 ```
 
 `HeaderUsername` and `HeaderHostname` will be displayed in navbar on left side in the format: `HeaderUsername@HeaderHostname ~ $`.  
+
 Optionaly you can add any of these social networks to the \[params\] section.
 
 ```
