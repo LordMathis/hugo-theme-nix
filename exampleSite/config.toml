@@ -1,6 +1,6 @@
 baseurl = "http://example.org/"
 title = "Hugo Website"
-theme = "nix"
+theme = "hugo-theme-nix"
 languageCode = "en-us"
 disqusShortname = "your_disqus_shortname"
 
