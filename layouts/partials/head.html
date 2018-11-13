@@ -16,6 +16,11 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ "css/nix.css" | absURL }}">
 
+<!-- favicon -->
+{{ with .Site.Params.Favicon }}
+<link rel="shortcut icon" href="{{ . }}">
+{{ end }}
+
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Inconsolata%7COpen+Sans%7CConcert+One" rel="stylesheet">
 
