@@ -40,6 +40,9 @@
 {{ with .Site.Params.TelegramID }}
 <a href="https://t.me/{{.}}" title="Telegram"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></a>
 {{ end }}
+{{ with .Site.Params.RedditID }}
+<a href="https://reddit.com/user/{{.}}" title="Reddit"><i class="fa fa-reddit fa-3x" aria-hidden="true"></i></a>
+{{ end }}
 {{ with .Site.Params.Email }}
 <a href="mailto:{{.}}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
 {{ end }}
