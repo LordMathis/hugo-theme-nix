@@ -45,6 +45,7 @@ Optionaly you can add any of these social networks to the \[params\] section.
   FacebookID = "your_facebook"
   InstagramID = "your_instagram"
   TelegramID = "your_telegram"
+  RedditID = "your_reddit"
   Email = "your_email"
   Phone = "+1-201-555-0123"
   Mobile = "+1-201-555-0123"
