@@ -15,7 +15,10 @@
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="{{ .Site.BaseURL }}">/home/{{.Site.Params.HeaderUsername}}</a>
+					<a href="{{ .Site.BaseURL }}page/about">~/{{.Site.Params.HeaderUsername}}</a>
+				</li>
+				<li>
+					<a href="{{ .Site.BaseURL }}contact/">~/Contact me</a>
 				</li>
 				{{ range .Site.Menus.header }}
 				{{ $name := lower .Name }}
