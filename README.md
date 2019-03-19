@@ -39,6 +39,7 @@ Optionaly you can add any of these social networks to the \[params\] section.
   GitlabId = "your_gitlab"
   BitbucketID = "your_bitbucket_id"
   TwitterID = "your_twitter"
+  MastodonURL = "your_mastodon_profile"
   CodepenID = "your_codepen"
   LinkedInID = "your_linkedin"
   GoogleplusID = "your_googleplus"
