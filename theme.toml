@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/LordMathis/hugo-theme-nix/blob/master/LICENSE.md"
 description = "Simple theme for Hugo"
 homepage = "https://github.com/LordMathis/hugo-theme-nix/"
-tags = ["simple", "minimal", "unix", "terminal", "blog"]
+tags = ["simple", "minimal", "unix", "terminal", "blog", "multilingual"]
 features = ["blog"]
 min_version = 0.20
 
