@@ -75,11 +75,10 @@ To add a submenu item add `[[menu.header]]` item with a parent parameter to `con
     identifier = "post"
     name = "posts"
     weight = 0
-    url = "/post"
   [[menu.header]]
     parent = "post"
     name = "All Posts"
-    url = "/post"
+    url = "/posts"
   [[menu.header]]
     parent = "post"
     name = "categories"
