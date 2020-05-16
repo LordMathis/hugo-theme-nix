@@ -9,19 +9,20 @@
 
     <body>
         {{ partial "header.html" . }}
-        <div class="container wrapper">
-            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-            <span class="post-date">{{ .Date.Format "2006-01-02 " }}</span>
-            <div class="post-content">
-                {{ .Content }}
+        <div class="flex-wrapper">
+            <div class="container wrapper">
+                <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                <span class="post-date">{{ .Date.Format "2006-01-02 " }}</span>
+                <div class="post-content">
+                    {{ .Content }}
+                </div>
+                {{ if (isset .Params "nocomments")  }}
+                {{ else }}
+                <div class="post-comments">
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+                {{ end }}
             </div>
-            {{ if (isset .Params "nocomments")  }}
-            {{ else }}
-            <div class="post-comments">
-                {{ template "_internal/disqus.html" . }}
-            </div>
-            {{ end }}
-            <div class="push"></div>
+            {{ partial "footer.html" . }}
         </div>
-        {{ partial "footer.html" . }}
     </body>
