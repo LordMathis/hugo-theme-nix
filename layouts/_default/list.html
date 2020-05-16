@@ -9,11 +9,14 @@
 
 	<body>
 		{{ partial "header.html" . }}
-		<div class="container wrapper">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h1 id=>{{ .Title }}</h1>
+		<div class="flex-wrapper">
+			<div class="container wrapper">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h1 id=>{{ .Title }}</h1>
+					</div>
 				</div>
+<<<<<<< Updated upstream
 			</div>
 			<ul id="post-list">
                 	{{ range .Paginator.Pages }}
@@ -26,14 +29,27 @@
 						<div class="post-summary"><p>{{ .Summary }}</p></div>
 						<div class="post-list-footer text-center">
 							<a href="{{ .Permalink }}">{{ i18n "read-more" }}</a>
+=======
+				<ul id="post-list">
+						{{ range .Paginator.Pages }}
+					<li>
+						<div class="post-list-item">
+							<div class="post-header">
+								<h4 class="post-link"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+								<h4 class="post-date">{{ .Date.Format "2006-01-02" }}</h4>
+							</div>
+							<div class="post-summary"><p>{{ .Summary }}</p></div>
+							<div class="post-list-footer text-center">
+								<a href="{{ .Permalink }}">Read More</a>
+							</div>
+>>>>>>> Stashed changes
 						</div>
-					</div>
-				</li>
-			{{ end }}
-			</ul>
-            {{ partial "pagination" . }}
-			<div class="push"></div>
+					</li>
+				{{ end }}
+				</ul>
+				{{ partial "pagination" . }}
+			</div>
+			{{ partial "footer.html" . }}
 		</div>
-		{{ partial "footer.html" . }}
 	</body>
 </html>

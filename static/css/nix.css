@@ -11,13 +11,19 @@ body {
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5em;
-	padding-top: 70px;
 }
 
 img {
  	max-width: 100%;
 }
 
+.flex-wrapper {
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 70px;
+}
 
 #green-terminal {
 	color: #00ff00;
@@ -119,19 +125,20 @@ i {
 
 .wrapper {
 	min-height: 100%;
-	margin: 0 auto -50px;
+	margin: 0 auto;
 }
 
 .footer {
 	background-color: #F5F5F5;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	width: 100%;
 	padding: 10px;
-	height: 50px;
 }
 
-.push {
-	height: 50px;
+.footer p {
+	margin: 0 !important;
 }
 
 .col-centered{
