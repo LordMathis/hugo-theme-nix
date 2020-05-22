@@ -8,25 +8,22 @@ disqusShortname = "your_disqus_shortname"
   [[menu.header]]
     name = "post"
     weight = 0
-    url = "/post"
+    url = "post"
   [[menu.header]]
     name = "about"
     weight = 1
-    url = "/about"
+    url = "about"
 
 [params]
   GithubID = "your_github"
   TwitterID = "your_twitter"
   LinkedInID = "your_linkedin"
-  GoogleplusID = "your_googleplus"
-  FacebookID = "your_facebook"
   TelegramID = "your_telegram"
   Name = "Mr Hugo"
   HeaderUsername = "hugo"
-  HeaderHostname = "hugo"
+  HeaderHostname = "gohugo.io"
   Email = "your_email"
   About = "Hi I'm Hugo and this is my website. I am a developer, writer and family man. I like developing websites using Hugo, sports, nature, photography and travel. On this websites you can expect my projects and blog posts about everything I love. Enjoy!"
   ProfilePicture = "/profile.jpg"
   Favicon = "/favicon.ico"
-  SlackURL = "your_slack_invite_url"
 
