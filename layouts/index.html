@@ -27,11 +27,13 @@
 					{{ partial "social.html" . }}
 					</div>
 				</div>
+				{{ with .Site.Params.About }}
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4 user-description text-center">
-						<p>{{ .Site.Params.About }}</p>
+						<p>{{ . }}</p>
 					</div>
 				</div>
+				{{ end }}
 			</div>
 			{{ partial "footer.html" . }}
 		</div>
