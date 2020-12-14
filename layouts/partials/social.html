@@ -37,6 +37,18 @@
 {{ with .Site.Params.LinkedInID }}
 <a href="https://linkedin.com/in/{{.}}" rel="me" title="LinkedIn"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a>
 {{ end }}
+{{ with .Site.Params.MediumID }}
+<a href="https://medium.com/@{{.}}" rel="me" title="Medium"><i class="fab fa-medium fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.YoutubeID }}
+<a href="https://youtube.com/c/{{.}}" rel="me" title="Youtube"><i class="fab fa-youtube fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.SpotifyID }}
+<a href="https://open.spotify.com/user/{{.}}" rel="me" title="Spotify"><i class="fab fa-spotify fa-3x" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.SoundcloudID }}
+<a href="https://soundcloud.com/{{.}}" rel="me" title="Soundcloud"><i class="fab fa-soundcloud fa-3x" aria-hidden="true"></i></a>
+{{ end }}
 {{ with .Site.Params.InstagramID }}
 <a href="https://instagram.com/{{.}}" rel="me" title="Instagram"><i class="fab fa-instagram fa-3x" aria-hidden="true"></i></a>
 {{ end }}

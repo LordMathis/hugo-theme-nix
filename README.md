@@ -45,16 +45,20 @@ Optionaly you can add any of these social networks to the \[params\] section.
   InstagramID = "your_instagram"
   LinkedInID = "your_linkedin"
   MastodonURL = "your_mastodon_profile"
+  MediumID = "your_medium_id"
   Mobile = "+1-201-555-0123"
   PayPalMeID = "https://www.paypal.me/..."
   Phone = "+1-201-555-0123"
   RedditID = "your_reddit"
   SlackURL = "https://join.slack.com/..."
+  SpotifyID = "your_spotify_id"
+  SoundcloudID = "your_soundcloud_id"
   StackExchangeID = "your_stackexchange_id"
   StackOverflowID = "your_stackoverflow_id"
   TelegramID = "your_telegram"
   TwitterID = "your_twitter"
   XingURL = "https://www.xing.com/profile/..."
+  YoutubeID = "your_youtube_id"
 ```
 
 To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
