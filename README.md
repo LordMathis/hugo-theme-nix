@@ -58,7 +58,8 @@ Optionaly you can add any of these social networks to the \[params\] section.
   TelegramID = "your_telegram"
   TwitterID = "your_twitter"
   XingURL = "https://www.xing.com/profile/..."
-  YoutubeID = "your_youtube_id"
+  # For youtube, since there are multiple path urls please add everything after https://youtube.com/ in channel url
+  YoutubeID = "c/your_youtube_id"
 ```
 
 To add a menu item add `[[menu.header]]` item to `config.toml`. For example:

@@ -41,7 +41,8 @@
 <a href="https://medium.com/@{{.}}" rel="me" title="Medium"><i class="fab fa-medium fa-3x" aria-hidden="true"></i></a>
 {{ end }}
 {{ with .Site.Params.YoutubeID }}
-<a href="https://youtube.com/c/{{.}}" rel="me" title="Youtube"><i class="fab fa-youtube fa-3x" aria-hidden="true"></i></a>
+<!-- For youtube, since there are multiple path urls please add everything after https://youtube.com/ in channel url -->
+<a href="https://youtube.com/{{.}}" rel="me" title="Youtube"><i class="fab fa-youtube fa-3x" aria-hidden="true"></i></a>
 {{ end }}
 {{ with .Site.Params.SpotifyID }}
 <a href="https://open.spotify.com/user/{{.}}" rel="me" title="Spotify"><i class="fab fa-spotify fa-3x" aria-hidden="true"></i></a>
