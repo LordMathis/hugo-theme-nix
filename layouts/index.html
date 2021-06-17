@@ -33,12 +33,14 @@
 				</div>
 			</div>
 			{{ end }}
+			{{ if .Site.Params.blogOnIndex }}
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<h1>Blog</h1>
 				</div>
 			</div>
 			{{ partial "postlist.html" . }}
+			{{ end }}
 		</main>
 		{{ partial "footer.html" . }}
 	</body>
