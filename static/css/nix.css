@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #user-name {
-	font-size: 1em;
+	font-size: 2em;
 	text-transform: uppercase;
 }
 
@@ -100,6 +100,7 @@ i {
 
 .post-summary {
 	padding: 0 5px 0 5px;
+	font-size: initial;
 }
 
 .post-list-footer {
@@ -139,6 +140,7 @@ i {
 
 .footer p {
 	margin: 0 !important;
+	font-size: initial;
 }
 
 .col-centered{
@@ -152,4 +154,27 @@ div p {
 
 td {
 	margin: 0 20px 0 20px;
+}
+
+/*
+ * Some font-size tweaks for smaller screens
+ */
+@media screen and (max-width: 480px) {
+	.user-social {
+		font-size: 50%;
+	}
+
+	nav {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.user-social {
+		font-size: 40%;
+	}
+
+	nav {
+		font-size: 80%;
+	}
 }
