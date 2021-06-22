@@ -1,58 +1,60 @@
-<div class="container-xxl p-0" >
-	<header>
-		<nav class="navbar navbar-dark bg-dark navbar-fixed-top font-header">
-			<div class="container-fluid">
-				<a class="navbar-brand" id="green-terminal" href='{{ "/" | absLangURL }}'>
-					{{ .Site.Params.HeaderUsername }}@{{ .Site.Params.HeaderHostname }} ~ $
-				</a>
-				<button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false">
-					<span class="visually-hidden">Toggle navigation</span>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-		
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href='{{ "/" | absLangURL }}'>/home/{{ .Site.Params.HeaderUsername }}</a>
-						</li>
-						{{ if .IsTranslated }}
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" role="button" title="{{ .Language.LanguageName }}">
-								LANG={{ .Language.Lang }}
-								<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								{{ range .Translations }}
-								<li>
-									<a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
-										export LANG={{ .Language.Lang }}
-									</a>
-								</li>
-								{{ end }}
-							</ul>
-						</li>
-						{{ end }}
-						{{ range .Site.Menus.header }}
-						{{ $name := lower .Name }}
-						<li class="dropdown">
-							{{ if .HasChildren }}
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								{{ range .Children }}
-								<li>
-									<a href="{{ .URL | absLangURL }}">~/{{ lower .Name }}</a>
-								</li>
-								{{ end }}
-							</ul>
-							{{ else }}
-							<a href="{{ .URL | absLangURL }}">~/{{ lower .Name }}</a>
-							{{ end  }}
-						</li>
-						{{ end }}
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-	</header>
-</div>
+<header>
+	<nav class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-lg font-header">
+		<div class="container-fluid">
+			<a class="navbar-brand" id="green-terminal" href='{{ "/" | absLangURL }}'>
+				{{ .Site.Params.HeaderUsername }}@{{ .Site.Params.HeaderHostname }} ~ $
+			</a>
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" 
+					aria-controls="navbar-collapse-1" aria-expanded="false">
+				<span class="visually-hidden">Toggle navigation</span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href='{{ "/" | absLangURL }}'>
+							/home/{{ .Site.Params.HeaderUsername }}</a>
+					</li>
+					{{ if .IsTranslated }}
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" 
+								title="{{ .Language.LanguageName }}" aria-expanded="false">
+							LANG={{ .Language.Lang }}
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							{{ range .Translations }}
+							<li>
+								<a class="nav-link" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+									export LANG={{ .Language.Lang }}
+								</a>
+							</li>
+							{{ end }}
+						</ul>
+					</li>
+					{{ end }}
+					{{ range .Site.Menus.header }}
+					{{ $name := lower .Name }}
+					<li class="nav-item dropdown">
+						{{ if .HasChildren }}
+						<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" 
+								aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							{{ range .Children }}
+							<li>
+								<a class="dropdown-item" href="{{ .URL | absLangURL }}">~/{{ lower .Name }}</a>
+							</li>
+							{{ end }}
+						</ul>
+						{{ else }}
+						<a class="nav-link" href="{{ .URL | absLangURL }}">~/{{ lower .Name }}</a>
+						{{ end  }}
+					</li>
+					{{ end }}
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</header>
