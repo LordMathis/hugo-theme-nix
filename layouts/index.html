@@ -8,40 +8,42 @@
 	</head>
 	<body>
 		{{ partial "header.html" . }}
-		<main class="container">
-			{{ with .Site.Params.ProfilePicture }}
-			<div class="row">
-				<div class="col-sm-3 col-centered text-center">
-					<img alt="profile-picture" class="img-fluid rounded-circle user-picture" src="{{.}}">
+		<div class="flex-wrapper">
+			<main class="container">
+				{{ with .Site.Params.ProfilePicture }}
+				<div class="row">
+					<div class="col-sm-3 col-centered text-center">
+						<img alt="profile-picture" class="img-fluid rounded-circle user-picture" src="{{.}}">
+					</div>
 				</div>
-			</div>
-			{{ end }}
-			<div class="row">
-				<div class="col-xs-12 user-profile text-center">
-					<h1 id="user-name">{{ .Site.Params.Name }}</h1>
+				{{ end }}
+				<div class="row">
+					<div class="col-xs-12 user-profile text-center">
+						<h1 id="user-name">{{ .Site.Params.Name }}</h1>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 user-social text-center">
-				{{ partial "social.html" . }}
+				<div class="row">
+					<div class="col-xs-12 user-social text-center">
+					{{ partial "social.html" . }}
+					</div>
 				</div>
-			</div>
-			{{ with .Site.Params.About }}
-			<div class="row">
-				<div class="col-lg-4 offset-lg-4 user-description text-center">
-					<p>{{ . }}</p>
+				{{ with .Site.Params.About }}
+				<div class="row">
+					<div class="col-lg-4 offset-lg-4 user-description text-center">
+						<p>{{ . }}</p>
+					</div>
 				</div>
-			</div>
-			{{ end }}
-			{{ if .Site.Params.blogOnIndex }}
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h1>Blog</h1>
+				{{ end }}
+				{{ if .Site.Params.blogOnIndex }}
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h1>Blog</h1>
+					</div>
 				</div>
-			</div>
-			{{ partial "postlist.html" . }}
-			{{ end }}
-		</main>
-		{{ partial "footer.html" . }}
+				{{ partial "postlist.html" . }}
+				{{ end }}
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
 	</body>
 </html>
