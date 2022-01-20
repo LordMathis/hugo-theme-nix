@@ -57,6 +57,7 @@ Optionaly you can add any of these social networks to the \[params\] section.
   StackOverflowID = "your_stackoverflow_id"
   TelegramID = "your_telegram"
   TwitterID = "your_twitter"
+  TwitchID = "your_twitch_username"
   XingURL = "https://www.xing.com/profile/..."
   # For youtube, since there are multiple path urls please add everything after https://youtube.com/ in channel url
   YoutubeID = "c/your_youtube_id"
