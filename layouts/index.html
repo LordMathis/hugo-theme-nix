@@ -8,34 +8,40 @@
 	</head>
 	<body>
 		{{ partial "header.html" . }}
-		<div class="flex-wrapper">
-			<div class="container wrapper">
-				{{ with .Site.Params.ProfilePicture }}
-				<div class="row">
-					<div class="col-sm-3 col-centered">
-						<img alt="profile-picture" class="img-responsive img-circle user-picture center-block" src="{{.}}">
-					</div>
+		<main class="container">
+			{{ with .Site.Params.ProfilePicture }}
+			<div class="row">
+				<div class="col-sm-3 col-centered text-center">
+					<img alt="profile-picture" class="img-fluid rounded-circle user-picture" src="{{.}}">
 				</div>
-				{{ end }}
-				<div class="row">
-					<div class="col-xs-12 user-profile text-center">
-						<h1 id="user-name">{{ .Site.Params.Name }}</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 user-social text-center">
-					{{ partial "social.html" . }}
-					</div>
-				</div>
-				{{ with .Site.Params.About }}
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4 user-description text-center">
-						<p>{{ . }}</p>
-					</div>
-				</div>
-				{{ end }}
 			</div>
-			{{ partial "footer.html" . }}
-		</div>
+			{{ end }}
+			<div class="row">
+				<div class="col-xs-12 user-profile text-center">
+					<h1 id="user-name">{{ .Site.Params.Name }}</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 user-social text-center">
+				{{ partial "social.html" . }}
+				</div>
+			</div>
+			{{ with .Site.Params.About }}
+			<div class="row">
+				<div class="col-lg-4 offset-lg-4 user-description text-center">
+					<p>{{ . }}</p>
+				</div>
+			</div>
+			{{ end }}
+			{{ if .Site.Params.blogOnIndex }}
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h1>Blog</h1>
+				</div>
+			</div>
+			{{ partial "postlist.html" . }}
+			{{ end }}
+		</main>
+		{{ partial "footer.html" . }}
 	</body>
 </html>

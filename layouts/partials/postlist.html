@@ -1,0 +1,16 @@
+<ul id="post-list">
+	{{ range .Paginator.Pages }}
+	<li>
+		<div class="post-list-item">
+			<div class="post-header">
+				<h4 class="post-link"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+				<h4 class="post-date">{{ .Date.Format "2006-01-02" }}</h4>
+			</div>
+			<div class="post-summary"><p>{{ .Summary }}</p></div>
+			<div class="post-list-footer text-center">
+				<a href="{{ .Permalink }}">{{ i18n "read-more" }}</a>
+			</div>
+		</div>
+	</li>
+	{{ end }}
+</ul>
