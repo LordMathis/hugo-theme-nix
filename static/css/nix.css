@@ -10,7 +10,6 @@ body {
 	background-color: #fdfdfd;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5em;
 }
 
 img {
@@ -39,6 +38,8 @@ img {
 
 nav {
 	font-size: 1.5em;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 .dropdown-menu li {
@@ -50,7 +51,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #user-name {
-	font-size: 2em;
+	font-size: 5em;
 	text-transform: uppercase;
 }
 
@@ -164,6 +165,10 @@ td {
 		font-size: 50%;
 	}
 
+	#user-name {
+		font-size: 2em;
+	}
+
 	nav {
 		font-size: 80%;
 	}
@@ -172,6 +177,10 @@ td {
 @media screen and (max-width: 320px) {
 	.user-social {
 		font-size: 40%;
+	}
+
+	#user-name {
+		font-size: 2em;
 	}
 
 	nav {
