@@ -50,6 +50,7 @@ Optionaly you can add any of these social networks to the \[params\] section.
   PayPalMeID = "https://www.paypal.me/..."
   Phone = "+1-201-555-0123"
   RedditID = "your_reddit"
+  RSSURL = "\path-to-xml" ( default hugo generates from pages at "/index.xml" )
   SlackURL = "https://join.slack.com/..."
   SpotifyID = "your_spotify_id"
   SoundcloudID = "your_soundcloud_id"
