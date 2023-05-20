@@ -172,6 +172,10 @@ td {
 	nav {
 		font-size: 80%;
 	}
+
+	.dropdown-menu li {
+		font-size: 80%;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -184,6 +188,10 @@ td {
 	}
 
 	nav {
+		font-size: 80%;
+	}
+
+	.dropdown-menu li {
 		font-size: 80%;
 	}
 }
