@@ -9,7 +9,7 @@
 				<span class="visually-hidden">Toggle navigation</span>
 				<span class="navbar-toggler-icon"></span>
 			</button>
-	
+
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav ms-auto">
@@ -24,10 +24,10 @@
 							LANG={{ .Language.Lang }}
 							<span class="caret"></span>
 						</a>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
 							{{ range .Translations }}
 							<li>
-								<a class="nav-link" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+								<a class="dropdown-item" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
 									export LANG={{ .Language.Lang }}
 								</a>
 							</li>
@@ -41,7 +41,7 @@
 						{{ if .HasChildren }}
 						<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" 
 								aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
 							{{ range .Children }}
 							<li>
 								<a class="dropdown-item" href="{{ .URL | absLangURL }}">~/{{ lower .Name }}</a>
