@@ -39,6 +39,8 @@ Optionaly you can add any of these social networks to the \[params\] section.
   FacebookID = "your_facebook"
   GithubID = "your_github"
   GitlabId = "your_gitlab"
+  # Uses keys.openpgp.org keyserver to search your fingerprint
+  # https://keys.openpgp.org/search?q=your_gpg_fingerprint
   GnuPGFingerprint = "your_gpg_fingerprint"
   GoogleAnalytics = "your_google_analytics_id"
   GoogleplusID = "your_googleplus"
