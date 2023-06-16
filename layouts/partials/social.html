@@ -1,5 +1,5 @@
 {{ with .Site.Params.GnuPGFingerprint }}
-<a href="https://pgp.key-server.io/pks/lookup?op=vindex&search=0x{{.}}" title="GPG"><i class="fas fa-unlock-alt fa-3x" aria-hidden="true"></i></a>
+<a href="https://keys.openpgp.org/search?q={{.}}" title="GPG"><i class="fas fa-unlock-alt fa-3x" aria-hidden="true"></i></a>
 {{ end }}
 {{ with .Site.Params.StackExchangeID }}
 <a href="https://stackexchange.com/users/{{.}}" rel="me" title="StackExchange"><i class="fab fa-stack-exchange fa-3x" aria-hidden="true"></i></a>
