@@ -14,7 +14,7 @@
 <a href="https://twitter.com/{{.}}" rel="me" title="Twitter"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a>
 {{ end }}
 {{ with .Site.Params.MastodonURL }}
-<a href="{{.}}" title="Mastodon"><i class="fab fa-mastodon fa-3x" aria-hidden="true"></i></a>
+<a href="{{.}}" rel="me" title="Mastodon"><i class="fab fa-mastodon fa-3x" aria-hidden="true"></i></a>
 {{ end }}
 {{ with .Site.Params.GoogleplusID }}
 <a href="https://plus.google.com/{{.}}/about" rel="me" title="Google+"><i class="fab fa-google-plus fa-3x" aria-hidden="true"></i></a>
