@@ -102,6 +102,9 @@ To enable disqus comments add `disqusShortname` to your `config.toml`.
 
 You can turn off disqus comments per page by adding `nocomments = true` to the front matter.
 
+
+To disable the post date from a specific page add `showpostdate = false` to your relevant `.md` file.
+
 ## License
 
 Nix is licensed under the [MIT License](LICENSE.md)
