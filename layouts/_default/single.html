@@ -12,7 +12,7 @@
     <div class="flex-wrapper">
         <div class="container wrapper">
             <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-            {{ if .Params.showthedate | default "true" }}
+            {{ if .Params.showpostdate | default "true" }}
             <span class="post-date">{{ .Date.Format "2006-01-02 " }}</span>
             {{ end }}
             <div class="post-content">
