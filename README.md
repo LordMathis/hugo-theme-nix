@@ -102,8 +102,9 @@ To enable disqus comments add `disqusShortname` to your `config.toml`.
 
 You can turn off disqus comments per page by adding `nocomments = true` to the front matter.
 
-
 To disable the post date from a specific page add `showpostdate = false` to your relevant `.md` file.
+
+Pages now also support ![Lastmod](https://gohugo.io/methods/page/lastmod/). This will not appear until you populate `lastmod:` in the page's frontmatter, unless you have `enableGitInfo` set to `true` in your site's config file, in which case it will use the date of the last git commit containing that page.
 
 ## License
 
