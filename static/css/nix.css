@@ -89,6 +89,11 @@ i {
 	float: right;
 }
 
+.post-updated-date {
+	float: right;
+    font-style: italic;
+}
+
 .post-header {
 	background-color: #F5F5F5;
 	overflow: hidden;
