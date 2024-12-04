@@ -33,6 +33,7 @@ Optionaly you can add any of these social networks to the \[params\] section.
 
 ```
   BitbucketID = "your_bitbucket_id"
+  BlueskyID = "your_bluesky_id"
   CodepenID = "your_codepen"
   CvURL = "your_cv_url"
   Email = "your_email"
