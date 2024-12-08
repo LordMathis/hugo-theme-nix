@@ -16,6 +16,9 @@
 {{ with .Site.Params.MastodonURL }}
 <a href="{{.}}" rel="me" title="Mastodon"><i class="fab fa-mastodon fa-3x" aria-hidden="true"></i></a>
 {{ end }}
+{{ with .Site.Params.BlueskyID }}
+<a href="https://bsky.app/profile/{{.}}" title="Bluesky"><i class="fab fa-bluesky fa-3x" aria-hidden="true"></i></a>
+{{ end }}
 {{ with .Site.Params.GoogleplusID }}
 <a href="https://plus.google.com/{{.}}/about" rel="me" title="Google+"><i class="fab fa-google-plus fa-3x" aria-hidden="true"></i></a>
 {{ end }}
@@ -83,4 +86,3 @@
 {{ with .Site.Params.RSSURL }}
 <a href="{{.}}" title="RSS"><i class="fa fa-rss fa-3x" aria-hidden="true"></i></a>
 {{ end }}
-
