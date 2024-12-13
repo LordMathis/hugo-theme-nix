@@ -16,7 +16,7 @@ git clone https://github.com/LordMathis/hugo-theme-nix
 
 ## Configuration
 
-Add these parameters to your `config.toml`:
+Add these parameters to your `hugo.toml`:
 
 ```
 [params]
@@ -67,7 +67,7 @@ Optionaly you can add any of these social networks to the \[params\] section.
   YoutubeID = "c/your_youtube_id"
 ```
 
-To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
+To add a menu item add `[[menu.header]]` item to `hugo.toml`. For example:
 
 ```
 [menu]
@@ -77,7 +77,7 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     url = "/posts"
 ```
 
-To add a submenu item add `[[menu.header]]` item with a parent parameter to `config.toml`. For example:
+To add a submenu item add `[[menu.header]]` item with a parent parameter to `hugo.toml`. For example:
 
 ```
 [menu]
@@ -99,7 +99,7 @@ To add a submenu item add `[[menu.header]]` item with a parent parameter to `con
     url = "/tags"
 ```
 
-To enable disqus comments add `disqusShortname` to your `config.toml`.
+To enable disqus comments add `disqusShortname` to your `hugo.toml`.
 
 You can turn off disqus comments per page by adding `nocomments = true` to the front matter.
 
